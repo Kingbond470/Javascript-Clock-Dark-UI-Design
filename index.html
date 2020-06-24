@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width",initial-scale=1.0>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Analog clock UI design using Javascript by KingbondL
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="clock">
+		<div class="hour">
+			<div class="hr" id="hr"></div>
+		</div>
+		<div class="min">
+			<div class="mn" id="mn"></div>
+		</div>
+		<div class="sec">
+			<div class="sc" id="sc"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		setInterval(() =>{
+			const deg=6;
+			const hour=document.querySelector('#hr');
+			const minute=document.querySelector('#mn');
+			const second=document.querySelector('#sc');
+			let day = new Date();
+			let hh=day.getHours()*30;
+			let mm=day.getMinutes()*deg;
+			let ss=day.getSeconds()*deg;
+			hour.style.transform=`rotatez(${(hh)+(mm/12)}deg)`;
+			minute.style.transform=`rotatez(${mm}deg)`;
+			second.style.transform=`rotatez(${ss}deg)`;
+			
+		})
+		
+	</script>
+</body>
+</html>
