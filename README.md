@@ -1,3 +1,6 @@
 # Javascript-Clock-Dark
-Link - https://analogwatch.netlify.app/
- Working analog clock using html & css, javascript with css neumorphism effect UI design
+Working analog clock using html & css, javascript with css neumorphism effect UI design
+
+![Clock](clock.png)
+
+URL - https://analogwatch.netlify.app/
